@@ -4,7 +4,7 @@ import requests
 from tenacity import retry, wait_random_exponential, stop_after_attempt
 from termcolor import colored
 
-GPT_MODEL = "gpt-3.5-turbo-0613"
+GPT_MODEL = "gpt-4o-turbo-0608"
 
 
 @retry(wait=wait_random_exponential(min=1, max=40), stop=stop_after_attempt(3))
